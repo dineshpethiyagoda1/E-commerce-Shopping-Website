@@ -1,0 +1,72 @@
+.order-confirmed-page {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.confirmed-icon {
+  width: 80px;
+  height: 80px;
+  background: #111;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.order-confirmed-page h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.confirmed-sub {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.confirmed-id {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 36px;
+}
+
+.confirmed-id strong {
+  color: #111;
+}
+
+.confirmed-btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.view-orders-btn {
+  background: #111;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.continue-shopping-btn {
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 20px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+}
