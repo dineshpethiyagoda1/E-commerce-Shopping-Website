@@ -27,31 +27,32 @@ The project follows an industry-style architecture with role-based authenticatio
 
 ## 📂 Project Structure
 
-
+```
 SHOPHUB/
 │
 ├── backend/
-│ ├── config/
-│ ├── controllers/
-│ ├── middleware/
-│ ├── models/
-│ ├── routes/
-│ ├── uploads/
-│ ├── server.js
-│ └── seed.js
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   └── seed.js
 │
 ├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/common/
-│ │ ├── context/
-│ │ ├── pages/
-│ │ ├── styles/
-│ │ └── utils/
-│ └── package.json
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── common/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   └── utils/
+│   └── package.json
 │
 └── README.md
-
+```
 
 ---
 
@@ -65,13 +66,13 @@ SHOPHUB/
 - Update Cart Quantity
 - Remove Items from Cart
 - Secure Checkout Process
-- Order Confirmation Page
+- Order Confirmation
 - View Order History
 
 ---
 
 ### 🛠️ Admin Features
-- Admin Dashboard (Overview & Stats)
+- Admin Dashboard (Overview & Statistics)
 - Product Management
   - Add Product
   - Edit Product
@@ -84,7 +85,7 @@ SHOPHUB/
 
 ## 👥 Team Responsibilities
 
-Each team member works in a dedicated feature branch.
+Each member works in a dedicated feature branch.
 
 | Member | Feature | Branch |
 |---------|---------|---------|
@@ -106,87 +107,91 @@ Each team member works in a dedicated feature branch.
 ```bash
 git clone https://github.com/YOUR_USERNAME/shophub.git
 cd shophub
-2️⃣ Backend Setup
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
-
-Create a .env file using .env.example.
-
-Run backend server:
-
 npm run dev
+```
 
-Backend runs on:
+Backend runs on:  
+`http://localhost:5000`
 
-http://localhost:5000
-3️⃣ Frontend Setup
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm start
+```
 
-Frontend runs on:
+Frontend runs on:  
+`http://localhost:3000`
 
-http://localhost:3000
-🔐 Environment Variables (Backend)
+---
 
-Example .env:
+## 🔐 Environment Variables (Backend)
 
+Create a `.env` file inside `backend/`:
+
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 NODE_ENV=development
-🌱 Database Seeding (Optional)
+```
+
+---
+
+## 🌱 Database Seeding (Optional)
+
+```
 node seed.js
+```
 
-This seeds:
+Seeds:
+- Default Admin User
+- Sample Products
 
-Default Admin User
+---
 
-Sample Products
+## 🔄 Git Workflow Rules
 
-🔄 Git Workflow Rules
+- Work only on your assigned branch.
+- Do not modify other members’ files.
+- Use meaningful commit messages.
+- Create Pull Requests before merging.
+- Only the team leader merges into `main`.
 
-Work only on your assigned branch.
+---
 
-Do not modify files assigned to other members.
+## 📦 Commit Message Convention
 
-Use meaningful commit messages.
-
-Create Pull Requests before merging.
-
-Only the team leader merges into main.
-
-📦 Commit Message Convention
+```
 feat: add new feature
 fix: resolve bug
-chore: project setup or maintenance
+chore: project setup
 refactor: improve existing code
-🎯 Project Goals
+```
 
-Implement real-world MERN architecture
+---
 
-Practice collaborative Git workflow
+## 🎯 Project Goals
 
-Build secure authentication & authorization
+- Apply real-world MERN architecture
+- Practice collaborative Git workflow
+- Implement secure authentication & authorization
+- Build a scalable e-commerce platform
 
-Develop a scalable e-commerce system
+---
 
-📌 Future Improvements
-
-Payment Gateway Integration
-
-Product Reviews & Ratings
-
-Wishlist Feature
-
-Search & Filtering
-
-Pagination
-
-Deployment (Render / Vercel / Railway)
-
-CI/CD Integration
-
-📄 License
+## 📄 License
 
 This project is developed for academic and portfolio purposes.
