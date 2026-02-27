@@ -1,119 +1,122 @@
-🛍️ SHOPHUB — Full Stack E-Commerce Platform
+# 🛍️ SHOPHUB  
+### Full Stack MERN E-Commerce Platform
 
-SHOPHUB is a full-stack e-commerce web application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
-This project is developed collaboratively, with clearly divided features per team member.
+SHOPHUB is a full-stack e-commerce web application built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**.  
+The project follows an industry-style architecture with role-based authentication, modular structure, and structured Git workflow for team collaboration.
 
-🚀 Tech Stack
-🔹 Frontend
+---
 
-React.js
+## 🚀 Tech Stack
 
-React Router
+### 🔹 Frontend
+- React.js
+- React Router DOM
+- Context API (Authentication & Cart)
+- Modular CSS Styling
 
-Context API (Auth & Cart)
+### 🔹 Backend
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+- Role-Based Authorization
+- Custom Middleware (Auth & Admin Protection)
+- File Upload Handling
 
-CSS (Modular Styling)
+---
 
-🔹 Backend
+## 📂 Project Structure
 
-Node.js
 
-Express.js
-
-MongoDB (Mongoose ODM)
-
-JWT Authentication
-
-Middleware (Auth, Admin Protection)
-
-File Upload Handling
-
-📂 Project Structure
 SHOPHUB/
 │
 ├── backend/
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│   ├── middleware/
-│   ├── config/
-│   ├── uploads/
-│   ├── server.js
-│   └── seed.js
+│ ├── config/
+│ ├── controllers/
+│ ├── middleware/
+│ ├── models/
+│ ├── routes/
+│ ├── uploads/
+│ ├── server.js
+│ └── seed.js
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── components/common/
-│   │   ├── context/
-│   │   ├── utils/
-│   │   └── styles/
-│   └── public/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/common/
+│ │ ├── context/
+│ │ ├── pages/
+│ │ ├── styles/
+│ │ └── utils/
+│ └── package.json
 │
 └── README.md
-✨ Features
-👤 User Features
 
-User Registration & Login (JWT Authentication)
 
-View Product Catalog
+---
 
-View Product Details
+## ✨ Features
 
-Add to Cart / Update Quantity / Remove Item
+### 👤 User Features
+- User Registration & Login (JWT-based)
+- Browse Product Catalog
+- View Product Details
+- Add to Cart
+- Update Cart Quantity
+- Remove Items from Cart
+- Secure Checkout Process
+- Order Confirmation Page
+- View Order History
 
-Checkout Process
+---
 
-Order Confirmation
+### 🛠️ Admin Features
+- Admin Dashboard (Overview & Stats)
+- Product Management
+  - Add Product
+  - Edit Product
+  - Delete Product
+- Order Management
+  - View All Orders
+  - Update Order Status
 
-Order History
+---
 
-🛠️ Admin Features
+## 👥 Team Responsibilities
 
-Admin Dashboard (Statistics Overview)
+Each team member works in a dedicated feature branch.
 
-Product Management
+| Member | Feature | Branch |
+|---------|---------|---------|
+| Nasli Nawas | Home Page | `feature/home-page` |
+| Tharushi | Authentication | `feature/auth-pages` |
+| Savindu | Product Viewing | `feature/product-pages` |
+| Niwarthana | Cart Functionality | `feature/cart` |
+| Ashini | Checkout Process | `feature/checkout` |
+| Sameera | Order History | `feature/order-history` |
+| Shanuka | Admin Dashboard & Orders | `feature/admin-dashboard` |
+| Dinesh (Leader) | Base Setup + Admin Products | `main` / `feature/admin-products` |
 
-Add Product
+---
 
-Edit Product
+## ⚙️ Installation & Setup
 
-Delete Product
+### 1️⃣ Clone the Repository
 
-Order Management
-
-View All Orders
-
-Update Order Status
-
-👥 Team Responsibilities
-
-Each member works in a separate feature branch and only pushes assigned files.
-
-Member	Feature	Branch
-Nasli Nawas	Home Page	feature/home-page
-Tharushi	Authentication	feature/auth-pages
-Savindu	Product Viewing	feature/product-pages
-Niwarthana	Cart Functionality	feature/cart
-Ashini	Checkout Process	feature/checkout
-Sameera	Order History	feature/order-history
-Shanuka	Admin Dashboard & Orders	feature/admin-dashboard
-Dinesh (Leader)	Base Setup + Admin Products	main / feature/admin-products
-⚙️ Installation & Setup
-1️⃣ Clone Repository
+```bash
 git clone https://github.com/YOUR_USERNAME/shophub.git
 cd shophub
 2️⃣ Backend Setup
 cd backend
 npm install
 
-Create .env file using .env.example as reference.
+Create a .env file using .env.example.
 
-Run backend:
+Run backend server:
 
 npm run dev
 
-Server runs on:
+Backend runs on:
 
 http://localhost:5000
 3️⃣ Frontend Setup
@@ -126,17 +129,18 @@ Frontend runs on:
 http://localhost:3000
 🔐 Environment Variables (Backend)
 
-Example .env configuration:
+Example .env:
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+NODE_ENV=development
 🌱 Database Seeding (Optional)
 node seed.js
 
-Seeds sample:
+This seeds:
 
-Admin User
+Default Admin User
 
 Sample Products
 
@@ -144,28 +148,28 @@ Sample Products
 
 Work only on your assigned branch.
 
-Do NOT modify other member files.
+Do not modify files assigned to other members.
 
-Use proper commit messages.
+Use meaningful commit messages.
 
-Create Pull Requests for review before merging.
+Create Pull Requests before merging.
 
-Leader merges into main.
+Only the team leader merges into main.
 
 📦 Commit Message Convention
-feat: new feature added
-fix: bug fix
-chore: project setup / maintenance
-refactor: code improvement
+feat: add new feature
+fix: resolve bug
+chore: project setup or maintenance
+refactor: improve existing code
 🎯 Project Goals
 
-Apply real-world MERN stack architecture.
+Implement real-world MERN architecture
 
-Practice team collaboration with Git workflow.
+Practice collaborative Git workflow
 
-Implement secure authentication and role-based access.
+Build secure authentication & authorization
 
-Build a production-style e-commerce system.
+Develop a scalable e-commerce system
 
 📌 Future Improvements
 
@@ -175,12 +179,14 @@ Product Reviews & Ratings
 
 Wishlist Feature
 
-Search & Filters
+Search & Filtering
 
 Pagination
 
 Deployment (Render / Vercel / Railway)
 
+CI/CD Integration
+
 📄 License
 
-This project is developed for academic and learning purposes.
+This project is developed for academic and portfolio purposes.
